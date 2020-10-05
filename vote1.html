@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Votable 1
+	</title>
+</head>
+<body>
+	<h3 id="response">Awaiting Response From Server...</h3>
+	<script type="text/javascript">
+		let yearOfBirth = prompt("Enter Year of Birth","YYYY");
+		let age = 2020 - yearOfBirth;
+		let display = (age >= 18 && age <=25 ? `You are  ${age}  years old and you are eligible to vote` : " Sorry, you are not in our voting age range and connot vote on this platform");
+		alert(display);
+		document.getElementById('response').innerHTML = display;
+	</script>
+</body>
+</html>

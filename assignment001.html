@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Assignment</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let yearOfBirth = prompt("Enter Year Of Birth","yyyy");
+		let age = 2020 - yearOfBirth;
+		
+		let gender = prompt("Select Gender \nEnter 1 for Male \nEnter 2 for Female","1");
+
+		let mStatus = prompt("Select Marital Status \nEnter 1 for single/divorced \nEnter 2 for married","1");
+
+		document.write(gender == 1 && mStatus == 2 ? (age >= 60 ? "You should be at home"  : "You have " + (60-age) + "years remaining in servece" ) : 
+
+			(gender == 2 && mStatus == 2 ? (age >= 55 ? "You should be at home"  : "You have " + (55-age) + "years remaining in servece" ) :
+
+			(gender == 1 && mStatus == 1 ? (age >= 70 ? "You should be at home"  : "You have " + (70-age) + "years remaining in servece" ) :
+
+			(gender == 2 && mStatus == 1 ? (age >= 65 ? "You should be at home"  : "You have " + (65-age) + "years remaining in servece" ) : "Sorry You Cant Check Your Status Now Please Try Again With Correct Details"
+		 ))))
+
+
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>User Registration</h1>
+    <fieldset>
+      <legend>Please Fill All Detail Correctly</legend>
+      <form action="success.html" method="get">
+        <div style="margin-bottom:10px">
+          <label>Name :</label><br>
+          <input type="text" name="name" placeholder="Enter Full Name" >
+        </div>
+        <div style="margin-bottom:10px">
+          <label>Email :</label><br>
+          <input type="email" name="email" value="iyke@gmail.com" readonly placeholder="Enter Email Address">
+        </div>
+        <div style="margin-bottom:10px">
+          <label>Phone :</label><br>
+          <input type="tel"  placeholder="Enter Phone Number">
+        </div>
+        <div style="margin-bottom:10px">
+          <label>Date OF Birth :</label><br>
+          <input type="date">
+        </div>
+        <div style="margin-bottom:10px">
+          <label>Skin Color :</label><br>
+          <input type="color">
+        </div>
+        <div style="margin-bottom:10px">
+          <label>Gender :</label><br>
+          <input type="radio" name="gender">Male
+          <input type="radio" name="gender">Female
+        </div>
+        <div style="margin-bottom:10px">
+          <label>State :</label><br>
+          <select>
+            <option value="">Abia</option>
+            <option value="">Edo</option>
+            <option value="">Lagos</option>
+            <option value="">Enugu</option>
+            <option value="">Delta</option>
+          </select>
+        </div>
+        <div style="margin-bottom:10px">
+          <label>Courses :</label><br>
+          <input type="checkbox" >Web
+          <input type="checkbox" >Mobile
+          <input type="checkbox" >Graphics
+          <input type="checkbox" >AI
+          <input type="checkbox" >Data Science
+        </div>
+        <div style="margin-bottom:10px">
+          <label>Expectations from us :</label><br>
+          <textarea rows="8" cols="30"></textarea>
+        </div>
+        <div>
+          <button type="submit">Register</button>
+          <!-- <input type="button" name="" value="submit"> -->
+        </div>
+      </form>
+    </fieldset>
+
+  </body>
+</html>
